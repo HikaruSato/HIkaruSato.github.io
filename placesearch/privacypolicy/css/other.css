@@ -152,8 +152,8 @@ MAINlayout_start
 #header{
 	padding:10px;}
 #header .logo{
-	background:url(../images/common/others_ms_jp_logo.png) top center no-repeat;
-	background-size:127px 92px;
+	background:url(../images/logo.png) top center no-repeat;
+	background-size:92px 92px;
 	width:127px;
 	height:92px;
 	text-indent:-9999px;}
