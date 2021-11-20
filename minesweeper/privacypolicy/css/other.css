@@ -1,0 +1,377 @@
+@charset "UTF-8";
+
+
+
+
+
+
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+RESET_start
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+html{}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+	margin:0;
+	padding:0;}
+
+table{
+	border-collapse:collapse;
+	border-spacing:0;}
+
+fieldset,img{border:0;}
+
+address,caption,cite,code,dfn,em,strong,th,var{
+	font-style:normal;
+	font-weight:normal;}
+
+li{list-style:none;}
+
+caption,th{text-align:left;}
+
+h1,h2,h3,h4,h5,h6{
+	font-size:100%;
+	font-weight:normal;}
+
+q:before,q:after{content:"";}
+
+abbr,acronym{
+	border:0;
+	font-variant:normal;}
+
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+
+input,textarea,select{
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;}
+
+input,textarea,select{
+	*font-size:100%;}
+
+legend{color:#000000;}
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　RESET_end
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+
+
+
+
+
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+COMMONlayout_start
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+/*----basicsetting_start----*/
+html{
+    font-size:62.5%;}
+html,
+body{
+	height:100%;}
+body.jp{
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;}
+body{
+	background:#cccccc;
+	color:#333333;
+    font-size:1.4rem; /*default14px*/
+	line-height:2.3rem;
+	font-family:Verdana,Arial,Geneva,Tahoma,sans-serif;
+	text-align:center;
+	-webkit-text-size-adjust:100%; /*viewport*/}
+body{
+	font-size:1.2rem; /*defaultOverRide*/
+	line-height:1.7rem;}
+/*----basicsetting_end----*/
+
+
+
+/*----ancher_start----*/
+a:link{}
+a:visited{}
+a:active{}
+a:hover{
+	text-decoration:underline;}
+a{text-decoration:none;}
+object{outline:none;}
+/*----ancher_end----*/
+
+
+
+/*----clear_start----*/
+/*--clearfix--*/
+.clearfix:after {
+	content:".";
+	display:block;
+	clear:both;
+	height:0;
+	visibility:hidden;}
+.clearfix {
+	min-height:1px;}
+* html .clearfix {
+	height:1px;
+	/*\*//*/
+	height: auto;
+	overflow: hidden;
+	/**/}
+/*--clear--*/
+.cf{
+	clear:both;
+	height:0;}
+/*----clear_end----*/
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　COMMONlayout_end
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+
+
+
+
+
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+MAINlayout_start
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+/*------optimizewrapper_start------*/
+#optimizewrapper{
+	position:relative; /**/
+	background:#ffffff;
+	width:100%; /**/
+	max-width:562px;
+	height:100%; /**/
+	min-height:100%; /**/
+	margin:0 auto;
+	text-align:left;}
+/*------optimizewrapper_end------*/
+
+
+
+
+
+
+
+/*------header_start------*/
+#header{
+	padding:10px;}
+#header .logo{
+	background:url(../images/logo.png) top center no-repeat;
+	background-size:92px 92px;
+	width:127px;
+	height:92px;
+	text-indent:-9999px;}
+
+.others #header{
+	background:#333333;}
+/*------header_end------*/
+
+
+
+
+
+
+
+/*------title_start------*/
+h1{
+	background:#f2f2f2;
+	background:linear-gradient(#ffffff, #f2f2f2) repeat scroll 0 0 #f2f2f2;
+	padding:8px;
+	font-weight:bold;
+	border-top:1px #cccccc solid;
+	border-bottom:1px #e5e5e5 solid;}
+h2{
+	padding:8px;
+	font-weight:bold;
+	border-top:3px #ffdd99 solid;
+	border-bottom:3px #f3f3f3 solid;}
+/*------title_end------*/
+
+
+
+
+
+
+
+/*------contentswrapper_start------*/
+#contentswrapper{
+	background:#ffffff;
+	padding:2rem;
+	border-top:1px #cccccc solid;
+	border-bottom:1px #cccccc solid;}
+#contentswrapper p{
+	margin:0 0 1rem 0;}
+
+#contentswrapper h3{
+	font-weight:bold;
+	margin:3rem 0 1rem 0;}
+#contentswrapper ol{
+	margin:1rem 0 2rem 0;}
+#contentswrapper li ol li{
+	list-style-type:none;
+	margin-left:2rem;
+	text-indent:-3rem;}
+#contentswrapper ul{
+	margin:0 0 0 2.5rem;}
+#contentswrapper ul li{
+	list-style-type:decimal;
+	margin-bottom:0.5rem;}
+#contentswrapper ul.nomal li{
+	list-style-type:disc;}
+
+.others{
+	color:#767676;}
+
+.others h3{
+	color:#000000;
+	padding:0.5rem 0rem 0.5rem 1rem;
+	border-left:3px #767676 solid;}
+.others h4{
+	color:#000000;}
+
+.others .container{
+	margin:0 0 4rem 0;}
+.others .container ol li{
+	margin:0 0 2rem 0;}
+	
+.others .container dl{}
+.others .container dt{
+	display:inline-block;
+	background:#535353;
+	color:#ffffff;
+	margin:1rem 0 0.5rem 0;
+	padding:0.3rem 1rem;
+	border-radius:3rem;}
+.others .container dd{
+	margin:0 0 0 1rem;}
+.others .date{
+	text-align:right;}
+
+/*--credit--*/
+.credit{
+	text-align:center;}
+#contentswrapper.credit h3{
+	border:none;}
+/*------contentswrapper_end------*/
+
+
+
+
+
+
+
+/*------SUPPORT_start------*/
+#contentswrapper .mailform{}
+
+#contentswrapper .mailform .send{
+	text-align:center;}
+
+#contentswrapper .mailform .cpSubmitBtn03{
+	/*reset*/
+	border:none;
+	background:none;
+	/*set*/
+	background:#cccccc;
+	background:linear-gradient(#ffffff, #cccccc) repeat scroll 0 0 #cccccc;
+	width:150px;
+	height:3rem;
+	font-weight:bold;
+	border:1px #aaaaaa solid;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	-o-border-radius:6px;
+	-ms-border-radius:6px;
+	cursor:pointer;
+	outline:none;}
+
+#contentswrapper .mailform strong{
+	color:#ED1B1F;}
+
+#contentswrapper .mailform dt{
+	margin:2em 0 0.2em 0;
+	font-weight:bold;}
+#contentswrapper .mailform dt span{
+	color:#ED1B1F;}
+#contentswrapper .mailform form dd{
+	color:#A8A8A8;
+	font-size:11px;}
+#contentswrapper .mailform form dd input,
+#contentswrapper .mailform form dd textarea{
+	font-size:1em;
+	border:1px #aaaaaa solid;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	-o-border-radius:6px;
+	-ms-border-radius:6px;}
+#contentswrapper .mailform form dd input{
+	min-width:20em;
+	padding:0.5em;}
+#contentswrapper .mailform form dd textarea{
+	width:100%;
+	min-height:15rem;}
+
+#contentswrapper .mailform .caption{
+	background-color:#DEF5D3;
+	margin:20px 0 60px 0;
+	padding:2rem 2rem 1rem 2rem;
+	border:3px #A2CF68 solid;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	-o-border-radius:6px;
+	-ms-border-radius:6px;}
+#contentswrapper .mailform .caption p{}
+
+/*--backtoplatform--*/
+.backtoplatform{}
+.backtoplatform li{
+	text-align:center;}
+.backtoplatform li a{
+	display:inline-block;
+	background:#00ff5c;
+	color:#004d15;
+	width:20em;
+	margin:3em auto;
+	padding:1em 0;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+
+	/*testshadow*/
+	-moz-text-shadow:0px 1px 0px #59c87f;
+	-webkit-text-shadow:0px 1px 0px #59c87f;
+	text-shadow:0px 1px 0px #59c87f;
+
+	/*border*/
+	border:1px #00962e solid;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	-o-border-radius:20px;
+	-ms-border-radius:20px;
+
+	/*gradation*/
+	background:-webkit-gradient(linear, left top, left bottom, from(#00ff5c), to(#005f17));
+	background:-webkit-linear-gradient(top, #00ff5c, #005f17);
+	background:linear-gradient(to bottom, #00ff5c, #005f17);}
+/*----SUPPORT_end----*/
+
+
+
+
+
+
+
+/*------footer_start------*/
+#footer{
+	text-align:center;
+	padding:4rem;}
+#footer address{
+	font-size:1rem;}
+/*------footer_end------*/
+/*＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　MAINlayout_end
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+
+
+
+
+
+
+
+
+
