@@ -1,0 +1,17 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [ 
+          "N32WVFQ7H8.com.tiktok.open.sharekitdemo.hs7"
+        ],
+        "components": [
+          {
+            "/": "/*",
+            "comment": "for example"
+          }
+        ]
+      }
+    ]
+  }
+}
